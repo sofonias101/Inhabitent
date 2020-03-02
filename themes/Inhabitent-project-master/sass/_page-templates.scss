@@ -60,6 +60,7 @@
     padding: 2rem;
     padding-left: 10rem;
     padding-right: 11rem;
+    padding-top: 2.5rem;
     }
   .site-content {
     display: flex;
@@ -138,3 +139,42 @@
     border-left: 1px solid #e1e1e1;
   }
 }
+
+/* Shop Stuff page */
+
+.post-type-archive {
+
+  .site-header {
+    display: flex;
+    align-items: center;
+    position: sticky ;
+    top: 0;
+    height: 3em;
+    opacity: 0.9;
+    background-color: $color__background-body;  
+    padding: 2rem;
+    padding-left: 10rem;
+    padding-right: 11rem;
+    padding-top: 2.5rem;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .product-thumbnail {
+
+    background-color: #e1e1e1;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+  .info-container {
+
+    font-size: 14.4px;
+    font-size: .9rem;
+    padding: .75rem 1rem;
+  }
+}
+
