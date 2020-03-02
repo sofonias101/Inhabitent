@@ -1,0 +1,43 @@
+// Structure
+
+$base__space-unit: 1.5rem;
+$site_width: 1120px;
+$solid_border: 1px solid #e1e1e1;
+$dashed_border: 1px dashed #c8c8c8;
+
+
+// Typography
+
+$font__main: sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+$base_font: 16px;
+$base_line-height: 1.75;
+$font_family:' Merriweather Web';
+$acc_font_family: 'Novecento Sans Web';
+
+// Colors
+
+$color__background-body: #fff;
+$color__text-main: #404040;
+
+$color__background-screen: #f1f1f1;
+$color__text-screen: #21759b;
+
+$color__background-hr: #ccc;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #666;
+
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+
+$green_background: #248A83;
+$purp_brand: #2f1339;
+$orange_brand: #d99054;
+$yellow_brand: #f0e4d1;
+$light_grey_brand: #a1a1a1;
+$medium_grey_brand: #808080;

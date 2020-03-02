@@ -1,0 +1,140 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Front page */
+// .page-header {
+//   background-color: white;
+// }
+// .home {
+//   .page-header {
+//     background-color: transparent;
+//   }
+// }
+
+
+/* About page */
+
+.page-about {
+
+  .site-header {
+  position: fixed;
+  opacity: 0.5;
+  padding-top: 1rem;
+
+
+  }
+  .entry-title{
+  position: relative; bottom: 460px;
+  }
+  .site-content {
+  display: flex;
+  text-align: center;
+  }
+  .about-hero-img {
+  
+    img {
+      height: auto;
+      max-width: 100%;
+      position: relative;
+      z-index: -1;
+    }
+    background: rgba(0, 0, 0, 0.3);
+  } 
+
+}
+
+/* Find Us page */
+
+.page-contact {
+  display: flex;
+
+  .site-header {
+    display: flex;
+    align-items: center;
+    position: sticky ;
+    top: 0;
+    height: 3em;
+    opacity: 0.9;
+    background-color: $color__background-body;  
+    padding: 2rem;
+    padding-left: 10rem;
+    padding-right: 11rem;
+    }
+  .site-content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10rem;
+  }
+  .content-area {
+    width:70%;
+    padding-right: 4rem;
+
+  }
+  .widget-area {
+    width:30%;
+    padding-top: 6rem;
+    padding-left: 4rem;
+    border-left: 1px solid #e1e1e1;
+  }
+
+}
+
+/* Journal page */
+
+.blog {
+  display: flex;
+  .site-header {
+    display: flex;
+    align-items: center;
+    position: sticky ;
+    top: 0;
+    height: 3em;
+    opacity: 0.9;
+    background-color: $color__background-body;  
+    padding: 2rem;
+    padding-left: 10rem;
+    padding-right: 11rem;
+    padding-top: 2.5rem;
+  }
+  .entry-header {
+    display: flex;
+    position: relative;
+
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    
+    .entry-title {
+      position: absolute;
+      top: 2;
+      background-color: $green_background;
+      color: white;
+      padding: .75rem 1.5rem;
+    }
+    .entry-meta {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: $green_background;
+      color: white;
+    }
+  }
+  .site-content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10rem;
+  }
+  .content-area {
+    width:70%;
+    padding-right: 4rem;
+
+  }
+  .widget-area {
+    width:30%;
+    padding-top: 6rem;
+    padding-left: 4rem;
+    margin-right: 6rem;
+    border-left: 1px solid #e1e1e1;
+  }
+}
