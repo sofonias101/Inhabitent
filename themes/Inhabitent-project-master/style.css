@@ -859,19 +859,19 @@ object {
 .post-type-archive .products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.5rem;
+  grid-gap: 1.5rem;
   margin-bottom: 1.5rem; }
 
-.post-type-archive .product-thumbnail {
-  background-color: #e1e1e1;
-  height: 250px;
-  overflow: hidden;
-  position: relative; }
+.post-type-archive .product-items {
+  border: 1px solid #e1e1e1; }
 
 .post-type-archive .info-container {
-  font-size: 14.4px;
-  font-size: .9rem;
-  padding: .75rem 1rem; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .site-header {
   display: -webkit-box;

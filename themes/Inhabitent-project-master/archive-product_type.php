@@ -14,10 +14,22 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					// the_archive_title( '<h1 class="page-title">', '</h1>' );
-					// the_archive_description( '<div class="product-type-list">', '</div>' );
+					the_archive_title( );
 				?>
 			</header><!-- .page-header -->
+
+			<?php
+            $taxonomies = get_terms( 'product_taxonomy', array(
+                'hide_empty' => true,
+            ) ); ?>
+            <?php if ( $taxonomies ) : ?>
+                <ul class="products-taxonomies-list">
+                <?php foreach ( $taxonomies  as $taxonomy ) : ?>
+                    <li><a href="<?php echo get_term_link($taxonomy); ?>"><?php echo $taxonomy->name ?></a></li>
+                <?php endforeach; ?>
+                </ul>
+            <?php endif;?>
+
 		   <div class="products">
 			    <?php /* Start the Loop */ ?>
 						
@@ -29,17 +41,19 @@ get_header(); ?>
 				            <?php if( get_field('image') ): ?>
 				            	<img class="item-image" src="<?php the_field('image'); ?>" />
 										<?php endif; ?>
-	
-											<div class="info-container">
+								</a>
+							</div><!-- product-thumbnail -->	
 
-				            	   <p class="item-title"> <?php the_title(); ?> </p>
-				            	   <?php if( get_field('price') ): ?>
-				            	   	<p class="item-price"> <?php the_field('price'); ?></p>
-											   <?php endif; ?>
+								<div class="info-container">
 
-											</div>	
-				        </a>
-			        </div><!-- product-thumbnail -->
+											<p class="item-title"> <?php the_title(); ?> </p>
+											
+											<?php if( get_field('price') ): ?>
+				            	 <p class="item-price"> <?php the_field('price'); ?></p>
+											<?php endif; ?>
+
+								</div>	
+  
 			      </div><!-- product-items -->
 			 
 			    <?php endwhile; ?>

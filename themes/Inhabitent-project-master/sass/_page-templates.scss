@@ -160,21 +160,16 @@
   .products {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 0.5rem;
+    grid-gap: 1.5rem;
     margin-bottom: 1.5rem;
   }
-  .product-thumbnail {
-
-    background-color: #e1e1e1;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
+  .product-items {
+    border: 1px solid #e1e1e1;
   }
-  .info-container {
-
-    font-size: 14.4px;
-    font-size: .9rem;
-    padding: .75rem 1rem;
+  .info-container{
+    display: flex;
+    justify-content: space-between;
   }
+  
 }
 

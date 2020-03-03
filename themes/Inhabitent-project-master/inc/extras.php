@@ -58,3 +58,12 @@ function inhabitent_start_footer_widgets() {
 	));
 }
 add_action( 'widgets_init', 'inhabitent_start_footer_widgets' );
+function shops ($title){
+	if ('product_type'== get_post_type()) {
+		$title = post_type_archive_title() . 'stuff';
+		return $title;
+	} else {
+		return $title;
+	}
+}
+add_filter('get_the_archive_title', 'shops');
