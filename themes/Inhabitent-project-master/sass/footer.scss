@@ -1,14 +1,30 @@
 .site-footer {
   .footer-banner {
-    height: 45vh;
+    height: 100%;
     .widget-footer-area {
       display: flex;
+      justify-content: space-evenly;
+      
       .footer-area {
         color: white;
+        padding-top: 7rem;
+        font-size: 1.2rem;
         h4 {
           color: $orange_brand;
         }
       }
+      .footer-logo  {
+       height: 100px;
+       width: 33%;
+       background-repeat: no-repeat;
+       padding-left: 8rem;
+       margin-top: 3rem;
+      }
     }
+      .copyright-container {
+        padding: 1.3rem 0;
+        text-align: center;
+        color: white;
+      }
   }
 }

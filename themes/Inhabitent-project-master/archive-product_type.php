@@ -13,12 +13,14 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( );
-				?>
 			</header><!-- .page-header -->
-
-			<?php
+			
+				<div class="shopstuff" >
+				  <?php 
+					  the_archive_title( );
+					?>
+				</div>
+			    <?php
             $taxonomies = get_terms( 'product_taxonomy', array(
                 'hide_empty' => true,
             ) ); ?>
@@ -29,7 +31,7 @@ get_header(); ?>
                 <?php endforeach; ?>
                 </ul>
             <?php endif;?>
-
+				
 		   <div class="products">
 			    <?php /* Start the Loop */ ?>
 						

@@ -17,11 +17,15 @@
 					
 							<div class="widget-footer-area">
                   <?php dynamic_sidebar( 'footer' ); ?>
-<!-- 									
-								<section>
-									<a href="http://"><img src="themes/Inhabitent-project-master/logos/inhabitent-logo-text-dark.svg" alt=""></a>
+									
+								<section class="footer-logo" style="<?php echo "background-image: url(" .get_template_directory_uri() . '/images/logos/inhabitent-logo-text.svg)'; ?>">
+									
 								</section>
-							</div> -->
+							</div>
+							
+							<div  class="copyright-container" >
+							<p class="copyright" >COPYRIGHT © 2020 INHABITENT</p>
+						 </div>
 
           </div><!-- .footer-container -->
 				</div><!--.footer-banner  -->
