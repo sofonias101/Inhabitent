@@ -1,7 +1,14 @@
-.footer-banner {
-  height: 45vh;
-
-   .widget-footer-area {
-    color: white;
+.site-footer {
+  .footer-banner {
+    height: 45vh;
+    .widget-footer-area {
+      display: flex;
+      .footer-area {
+        color: white;
+        h4 {
+          color: $orange_brand;
+        }
+      }
+    }
   }
- }
+}

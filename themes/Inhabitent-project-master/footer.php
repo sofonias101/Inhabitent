@@ -17,11 +17,11 @@
 					
 							<div class="widget-footer-area">
                   <?php dynamic_sidebar( 'footer' ); ?>
-							</div>
-      
-						  <!-- <div class="site-info">
-					    <p>COPYRIGHT © 2019 INHABITENT </p>
-				      </div>.site-info -->
+<!-- 									
+								<section>
+									<a href="http://"><img src="themes/Inhabitent-project-master/logos/inhabitent-logo-text-dark.svg" alt=""></a>
+								</section>
+							</div> -->
 
           </div><!-- .footer-container -->
 				</div><!--.footer-banner  -->
