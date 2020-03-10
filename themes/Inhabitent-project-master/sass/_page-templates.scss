@@ -11,7 +11,9 @@
 //     background-color: transparent;
 //   }
 // }
-
+a {
+  color:black;
+}
 
 /* About page */
 
@@ -188,3 +190,111 @@
   
 }
 
+/*Single blog page*/
+.single-post {
+  display: flex;
+  justify-content: flex-start;
+  .site-header {
+    display: flex;
+    align-items: center;
+    position: sticky ;
+    top: 0;
+    height: 3em;
+    opacity: 0.9;
+    background-color: $color__background-body;  
+    padding: 2rem;
+    padding-right: 11rem;
+    padding-top: 2.5rem;
+  }
+  .entry-header {
+    display: flex;
+    position: relative;
+
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    
+    .entry-title {
+      position: absolute;
+      top: 2;
+      background-color: $green_background;
+      color: white;
+      padding: .75rem 1.5rem;
+    }
+    .entry-meta {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: $green_background;
+      color: white;
+      margin-right: 26.5rem;
+    }
+  }
+  .site-content {
+    display: flex;
+    flex-direction: row;
+    }
+  .content-area {
+    width:70%;
+    padding-right: 4rem;
+
+  }
+  .widget-area {
+    width:30%;
+    padding-top: 6rem;
+    padding-left: 4rem;
+    margin-right: 6rem;
+    border-left: 1px solid #e1e1e1;
+  }
+  .comment-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    .comment-reply-title{
+      font-size: 1.8rem;
+      text-transform:uppercase ;
+    }
+    p {
+      font-size: 1.3rem;
+      grid-column: span 2;
+    }
+    label {
+      text-transform: uppercase;
+    }
+    span {
+      color: $orange_brand;
+    }
+    .comment-form-cookies-consent{
+      display: none;
+    }
+    .comment-form-email {
+      grid-column: span 1;
+    }
+    .comment-form-author {
+      grid-column: span 1;
+    }
+    .comment-form-url {
+      grid-column: span 2;
+      input{
+
+        width: 100%;
+      }
+    }
+    .form-submit {
+      .submit {
+        background: $green_background;  
+        border: none;
+        border-radius: 0;
+        color: #fff;
+        font-size: 14.4px;
+        font-size: .9rem;
+        line-height: 1;
+        padding: .75rem 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        box-shadow:none;
+        text-shadow:none;
+      }
+    }
+  }
+}
