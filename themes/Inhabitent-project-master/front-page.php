@@ -7,9 +7,12 @@
 
 get_header(); ?>
 
-<h2>My Custom Front Page</h2>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<div class="frontpage-banner">
+			<?php the_post_thumbnail(); ?>
+			<img  class="banner-logo"src="wp-content/themes/Inhabitent-project-master/images/logos/inhabitent-logo-full.svg" alt="">
+		</div>
 
 	  	<?php
 	        $args = array( 'posts_per_page' => 3,
@@ -21,7 +24,7 @@ get_header(); ?>
 
 <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 
-   <?php get_template_part ('template-parts/content'); ?>
+   <?php get_template_part ('template-parts/content','front-page'); ?>
 
 	 
 	 

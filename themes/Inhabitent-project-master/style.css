@@ -999,6 +999,17 @@ a {
               box-shadow: none;
       text-shadow: none; }
 
+/*Front Page*/
+.home .site-header {
+  position: fixed;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem; }
+
+.home .frontpage-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .site-header {
   display: -webkit-box;
   display: -ms-flexbox;
