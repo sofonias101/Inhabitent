@@ -9,16 +9,19 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<div class="entry-meta">
-			<?php Inhabitent_starter_posted_on(); ?> / <?php Inhabitent_starter_comment_count(); ?> / <?php Inhabitent_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
+		<div class="product-image" >
+			<img src="<?php echo the_field('image'); ?>" />
+		</div>
+		
+		
+		
+		
 	</header><!-- .entry-header -->
+
+	<div class="product-info" >
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	
+	<h1>$<?php the_field('price'); ?></h1>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -31,7 +34,7 @@
 
 		
 	</div><!-- .entry-content -->
-
+	</div>
 	<footer class="entry-footer">
 		<?php Inhabitent_starter_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
