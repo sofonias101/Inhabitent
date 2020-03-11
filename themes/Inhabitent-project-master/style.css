@@ -1032,8 +1032,9 @@ a {
   .home .main-content {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    padding-top: 50px;
-    padding-bottom: 200px; }
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px; }
     .home .main-content .post-list {
       grid-row: span 2;
       display: grid;
@@ -1048,7 +1049,8 @@ a {
       grid-row: span 2;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 10px; }
+      grid-gap: 10px;
+      margin-bottom: 4.5rem; }
       .home .main-content .products-taxonomies-front a {
         display: -webkit-box;
         display: -ms-flexbox;
