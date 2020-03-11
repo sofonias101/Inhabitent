@@ -17,9 +17,9 @@ get_header(); ?>
 			
 				<div class="shopstuff" >
 				  <?php 
-					  the_archive_title( );
+					  get_the_archive_title( );
 					?>
-				</div>
+				</div> 
 			    <?php
             $taxonomies = get_terms( 'product_taxonomy', array(
                 'hide_empty' => true,
@@ -29,8 +29,10 @@ get_header(); ?>
                 <?php foreach ( $taxonomies  as $taxonomy ) : ?>
                     <li><a href="<?php echo get_term_link($taxonomy); ?>"><?php echo $taxonomy->name ?></a></li>
                 <?php endforeach; ?>
-                </ul>
-            <?php endif;?>
+								</ul>
+								<?php endif;?>
+					 
+				
 				
 		   <div class="products">
 			    <?php /* Start the Loop */ ?>

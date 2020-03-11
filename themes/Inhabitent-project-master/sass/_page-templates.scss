@@ -301,6 +301,7 @@ a {
 
 /*Front Page*/
 .home {
+  width: 100%;
   .site-header {
     position: fixed;
     padding-top: 2rem;
@@ -308,9 +309,70 @@ a {
   }
   .frontpage-banner{
     display: flex;
-   
+    align-items: center;
+    justify-content: center;
+  } 
+  .banner {
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 97vh;
+    filter: brightness(62%);
+   }
   .banner-logo {
-
+    position: absolute;
+    margin: 0 auto;
+    height: 300px;
+    left: calc(50% - 100px);
+    z-index: 3;
   }
- }
+  .main-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    
+    .post-list {
+      grid-row: span 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      grid-gap: 10px;
+      height: 500px;
+      article {
+       border: 1px solid #e1e1e1;
+       .entry-content {
+        display: none;
+       }
+      }
+    }
+    .products-taxonomies-front {
+      grid-row: span 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+      a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      padding: .75rem;
+      width: 300px;
+      .front-page-taxonomies-icons{
+        height: 70px;
+        width: 70px;
+        
+      }
+    }
+        p {
+          margin-bottom: 1.5rem;
+      }
+    }
+  }
+      .link-button{
+        bottom: .75rem;
+        left: .75rem;
+        border: 1px solid #000;
+        color: #000;
+      }
 }

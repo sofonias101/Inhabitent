@@ -1000,15 +1000,80 @@ a {
       text-shadow: none; }
 
 /*Front Page*/
-.home .site-header {
-  position: fixed;
-  padding-top: 2rem;
-  padding-bottom: 1.5rem; }
-
-.home .frontpage-banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.home {
+  width: 100%; }
+  .home .site-header {
+    position: fixed;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem; }
+  .home .frontpage-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .home .banner {
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 97vh;
+    -webkit-filter: brightness(62%);
+            filter: brightness(62%); }
+  .home .banner-logo {
+    position: absolute;
+    margin: 0 auto;
+    height: 300px;
+    left: calc(50% - 100px);
+    z-index: 3; }
+  .home .main-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 200px; }
+    .home .main-content .post-list {
+      grid-row: span 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+      height: 500px; }
+      .home .main-content .post-list article {
+        border: 1px solid #e1e1e1; }
+        .home .main-content .post-list article .entry-content {
+          display: none; }
+    .home .main-content .products-taxonomies-front {
+      grid-row: span 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px; }
+      .home .main-content .products-taxonomies-front a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        border: 1px solid #e1e1e1;
+        border-top-width: 5px;
+        padding: .75rem;
+        width: 300px; }
+        .home .main-content .products-taxonomies-front a .front-page-taxonomies-icons {
+          height: 70px;
+          width: 70px; }
+      .home .main-content .products-taxonomies-front p {
+        margin-bottom: 1.5rem; }
+  .home .link-button {
+    bottom: .75rem;
+    left: .75rem;
+    border: 1px solid #000;
+    color: #000; }
 
 .site-header {
   display: -webkit-box;
