@@ -845,77 +845,6 @@ a {
   margin-right: 6rem;
   border-left: 1px solid #e1e1e1; }
 
-/* Shop Stuff page */
-.post-type-archive .site-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  top: 0;
-  height: 3em;
-  opacity: 0.9;
-  background-color: #fff;
-  padding: 2rem;
-  padding-top: 3.5rem; }
-  .post-type-archive .site-header .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1120px; }
-
-.post-type-archive .shopstuff {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-top: 8rem;
-  padding-bottom: 2rem; }
-
-.post-type-archive .site-main {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px; }
-
-.post-type-archive .products-taxonomies-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 4rem;
-  border-bottom: dashed 1px #8d8c8c; }
-  .post-type-archive .products-taxonomies-list a {
-    margin: 0 1.5rem;
-    color: black;
-    text-decoration: none; }
-
-.post-type-archive .products {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding-top: 3rem; }
-
-.post-type-archive .product-items {
-  border: 1px solid #e1e1e1; }
-
-.post-type-archive .info-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
 /*Single blog page*/
 .single-post .big-container {
   display: -webkit-box;
@@ -948,7 +877,7 @@ a {
   height: 30rem; }
   .single-post .entry-header .entry-title {
     position: absolute;
-    top: 2;
+    top: 3;
     background-color: #248A83;
     color: white;
     padding: .75rem 1.5rem; }
@@ -1022,6 +951,77 @@ a {
     -webkit-box-shadow: none;
             box-shadow: none;
     text-shadow: none; }
+
+/* Shop Stuff page */
+.post-type-archive .site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  height: 3em;
+  opacity: 0.9;
+  background-color: #fff;
+  padding: 2rem;
+  padding-top: 3.5rem; }
+  .post-type-archive .site-header .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px; }
+
+.post-type-archive .shopstuff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 8rem;
+  padding-bottom: 2rem; }
+
+.post-type-archive .site-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.post-type-archive .products-taxonomies-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 4rem;
+  border-bottom: dashed 1px #8d8c8c; }
+  .post-type-archive .products-taxonomies-list a {
+    margin: 0 1.5rem;
+    color: black;
+    text-decoration: none; }
+
+.post-type-archive .products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-top: 3rem; }
+
+.post-type-archive .product-items {
+  border: 1px solid #e1e1e1; }
+
+.post-type-archive .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 /*Front Page*/
 .home {
