@@ -350,10 +350,16 @@ a {
 /*Front Page*/
 .home {
   width: 100%;
+  a {
+    color: $color__text-screen;
+  }
   .site-header {
-    position: fixed;
+    position: fixed;    
     padding-top: 2rem;
     padding-bottom: 1.5rem;
+    background-color: white;
+    opacity: 0.7;
+    
   }
   .frontpage-banner{
     display: flex;
@@ -400,6 +406,7 @@ a {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-gap: 10px;
       margin-bottom: 4.5rem;
+      padding-top: 4rem;
       a{
       display: flex;
       flex-direction: column;
