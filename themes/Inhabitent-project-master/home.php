@@ -7,6 +7,7 @@
 
 get_header(); ?>
 
+<div class="big-container" >
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -55,4 +56,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+</div><!-- big-container -->
 <?php get_footer(); ?>

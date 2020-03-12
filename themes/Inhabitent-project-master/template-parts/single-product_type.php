@@ -10,18 +10,18 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<div class="product-image" >
-		<img src="<?php echo get_the_post_thumbnail_url() . ')'?>" />		
-	 </div>
-	 
+			<img src="<?php echo the_field('image'); ?>" />
+		</div>
+		
+		
+		
+		
 	</header><!-- .entry-header -->
-	 
-	 <div class="product-info" >
-		 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		 
-		 <div class="entry-meta">
-			 <?php Inhabitent_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php Inhabitent_starter_posted_by(); ?>
-			</div><!-- .entry-meta -->
-			
+
+	<div class="product-info" >
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	
+	<h1>$<?php the_field('price'); ?></h1>
 
 	<div class="entry-content">
 		<?php the_content(); ?>

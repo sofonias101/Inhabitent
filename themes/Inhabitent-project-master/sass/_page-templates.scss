@@ -87,11 +87,13 @@ a {
 /* Journal page */
 
 .blog {
-  display: flex;
+  .big-container {
+    display: flex;
+  }
   .site-header {
     display: flex;
     align-items: center;
-    position: sticky ;
+    position: fixed ;
     top: 0;
     height: 3em;
     opacity: 0.9;
@@ -99,12 +101,11 @@ a {
     padding: 2rem;
     padding-left: 10rem;
     padding-right: 11rem;
-    padding-top: 2.5rem;
+    
   }
   .entry-header {
     display: flex;
     position: relative;
-
     background-position: center;
     background-size: cover;
     height: 30rem;
@@ -132,7 +133,9 @@ a {
   .content-area {
     width:70%;
     padding-right: 4rem;
-
+    padding-left: 10rem;
+    padding-top: 5.5rem;
+    padding-bottom: 3.5rem;
   }
   .widget-area {
     width:30%;
@@ -150,24 +153,36 @@ a {
   .site-header {
     display: flex;
     align-items: center;
-    position: sticky ;
+    position: fixed ;
     top: 0;
     height: 3em;
     opacity: 0.9;
     background-color: $color__background-body;  
     padding: 2rem;
-    padding-left: 10rem;
-    padding-right: 11rem;
-    padding-top: 2.5rem;
+    padding-top: 3.5rem;
+    .container{
+      margin-left: auto;
+      margin-right: auto;
+      width: 1120px;
+    }
   }
   .shopstuff {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    padding-top:8rem;
+    padding-bottom:2rem;
   }
-    .products-taxonomies-list {
-      display: flex;
-      justify-content: center;
+  .site-main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+  }
+  .products-taxonomies-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom:4rem;
+    border-bottom: dashed 1px #8d8c8c;
       a {
         margin: 0 1.5rem;
         color: black;
@@ -179,6 +194,7 @@ a {
     grid-template-columns: repeat(4,1fr);
     grid-gap: 1.5rem;
     margin-bottom: 1.5rem;
+    padding-top: 3rem;
   }
   .product-items {
     border: 1px solid #e1e1e1;
@@ -192,24 +208,25 @@ a {
 
 /*Single blog page*/
 .single-post {
-  display: flex;
-  justify-content: flex-start;
+  .big-container {
+    display: flex;
+  }
   .site-header {
     display: flex;
     align-items: center;
-    position: sticky ;
+    position: fixed ;
     top: 0;
     height: 3em;
     opacity: 0.9;
     background-color: $color__background-body;  
     padding: 2rem;
     padding-right: 11rem;
-    padding-top: 2.5rem;
+    padding-left: 10rem;
+    
   }
   .entry-header {
     display: flex;
     position: relative;
-
     background-position: center;
     background-size: cover;
     height: 30rem;
@@ -227,18 +244,24 @@ a {
       right: 0;
       background-color: $green_background;
       color: white;
-      margin-right: 26.5rem;
     }
   }
+  
   .site-content {
     display: flex;
     flex-direction: row;
-    }
-  .content-area {
-    width:70%;
-    padding-right: 4rem;
-
   }
+    .content-area {
+      width:70%;
+      padding-right: 4rem;
+      padding-left: 10rem;
+      padding-top: 5.5rem;
+      padding-bottom: 3.5rem;
+      img{
+        height: 500px;
+        max-width: 100%;
+      }
+    }
   .widget-area {
     width:30%;
     padding-top: 6rem;
@@ -420,10 +443,10 @@ a {
   .site-header {
     display: flex;
     align-items: center;
-    position: sticky ;
+    position: fixed;
     top: 0;
     height: 3em;
-    opacity: 0.9;
+    opacity: 0.7;
     background-color: $color__background-body;  
     padding: 2rem;
     padding-top: 2.5rem;
@@ -437,6 +460,7 @@ a {
      margin-left: auto;
     margin-right: auto;
     width: 1120px;
+    padding-top: 4rem;
   }
   .page-header{
     display: flex;

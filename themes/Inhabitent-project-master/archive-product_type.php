@@ -41,7 +41,7 @@ get_header(); ?>
 			
 				    <div class="product-items" >
 				    	<div class="product-thumbnail" >
-				    		<a href="#" rel="">
+				    		<a href="<?php echo esc_url( get_permalink()); ?>" rel="">
 				            <?php if( get_field('image') ): ?>
 				            	<img class="item-image" src="<?php the_field('image'); ?>" />
 										<?php endif; ?>
