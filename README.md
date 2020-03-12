@@ -1,7 +1,7 @@
 # Inhabitent
 Description
-This is a wordpress theme built using mostly PHP, HTML5, JavaScript and SCSS.
 
+Inhabitent is wordpress site. The  theme is built using PHP, HTML5, JavaScript and SCSS. It consist in a full blog with support for a Blog , Product ,Contact and info Page.
 
 Technology used:
 

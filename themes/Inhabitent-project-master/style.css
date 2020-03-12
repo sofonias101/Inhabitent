@@ -739,44 +739,65 @@ a {
     z-index: -1; }
 
 /* Find Us page */
-.page-contact {
+.page-contact .big-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .page-contact .site-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    height: 3em;
-    opacity: 0.9;
-    background-color: #fff;
-    padding: 2rem;
-    padding-left: 10rem;
-    padding-right: 11rem;
-    padding-top: 2.5rem; }
-  .page-contact .site-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding-left: 10rem; }
-  .page-contact .content-area {
-    width: 70%;
-    padding-right: 4rem; }
-  .page-contact .widget-area {
-    width: 30%;
-    padding-top: 6rem;
-    padding-left: 4rem;
-    border-left: 1px solid #e1e1e1; }
+
+.page-contact .site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 3em;
+  opacity: 0.9;
+  background-color: #fff;
+  padding: 2rem;
+  padding-left: 10rem;
+  padding-right: 11rem;
+  padding-top: 2.5rem; }
+
+.page-contact .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 10rem; }
+
+.page-contact .content-area {
+  width: 70%;
+  padding-right: 4rem; }
+
+.page-contact .widget-area {
+  width: 30%;
+  padding-top: 6rem;
+  padding-left: 4rem;
+  border-left: 1px solid #e1e1e1; }
+
+.page-contact .wpcf7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%; }
+  .page-contact .wpcf7 p {
+    font-size: 1.3rem;
+    grid-column: span 2; }
+  .page-contact .wpcf7 label {
+    text-transform: uppercase; }
+  .page-contact .wpcf7 .wpcf7-form-control-wrap {
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+  .page-contact .wpcf7 .comment-form-cookies-consent {
+    display: none; }
+  .page-contact .wpcf7 .wpcf7-textarea {
+    grid-column: span 2; }
 
 /* Journal page */
 .blog .big-container {
@@ -1216,6 +1237,74 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+/*Archive page*/
+.archive .big-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.archive .site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  height: 3em;
+  opacity: 0.9;
+  background-color: #fff;
+  padding: 2rem;
+  padding-left: 10rem;
+  padding-right: 11rem;
+  padding-top: 4rem; }
+
+.archive .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 30rem; }
+  .archive .entry-header .entry-title {
+    position: absolute;
+    top: 2;
+    background-color: #248A83;
+    color: white;
+    padding: .75rem 1.5rem; }
+  .archive .entry-header .entry-meta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #248A83;
+    color: white; }
+
+.archive .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 10rem; }
+
+.archive .content-area {
+  width: 70%;
+  padding-right: 4rem;
+  padding-left: 10rem;
+  padding-top: 5.5rem;
+  padding-bottom: 3.5rem; }
+
+.archive .widget-area {
+  width: 30%;
+  padding-top: 6rem;
+  padding-left: 4rem;
+  margin-right: 6rem;
+  border-left: 1px solid #e1e1e1; }
 
 .site-header {
   display: -webkit-box;

@@ -6,18 +6,22 @@
  */
 
 get_header(); ?>
+ <div class="big-container" >
+	 <div id="primary" class="content-area">
+		 <main id="main" class="site-main" role="main">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+			 <?php while ( have_posts() ) : the_post(); ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'template-parts/content', 'page', 'findus' ); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page', 'about' ); ?>
+			 <?php endwhile; // End of the loop. ?>
 
-			<?php endwhile; // End of the loop. ?>
+		 </main><!-- #main -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+  	</div><!-- #primary -->
 
-	<?php get_sidebar(); ?>
+		<?php get_sidebar(); ?>
+		
+	</div><!-- big-container -->
+
 	<?php get_footer(); ?>
