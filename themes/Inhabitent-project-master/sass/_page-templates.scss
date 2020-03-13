@@ -2,47 +2,49 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
-// .page-header {
-//   background-color: white;
-// }
-// .home {
-//   .page-header {
-//     background-color: transparent;
-//   }
-// }
+
 a {
   color:black;
 }
 
 /* About page */
 
-.page-about {
-
+.page-about{
+  p {
+    font-size: 1.1rem;
+    font-weight: $font__line-height-body;
+  }
   .site-header {
   position: fixed;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
-  
-  
-
+  padding-right: 1rem;
+  background-color: white;
+  opacity: 0.7;
   }
   .entry-title{
-  position: relative; bottom: 460px;
+  position: relative; bottom: 600px; left: 45%;
+  font-size: 3rem;
   color: white;
   }
-  .site-content {
-  display: flex;
-  text-align: center;
+  .entry-content  {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    line-height: 1.75;
+    padding-bottom: 20px;
+  }
+  h2  {
+    text-align: center;
+    font-size: 2rem;
   }
   .about-hero-img {
-  
+    background: rgba(0, 0, 0, 0.3);
     img {
       max-width: 100%;
       position: relative;
       z-index: -1;
     }
-    background: rgba(0, 0, 0, 0.3);
   } 
 
 }
@@ -351,6 +353,7 @@ a {
 .home {
   width: 100%;
   a {
+    text-decoration: none;
     color: $color__text-screen;
   }
   .site-header {
@@ -359,6 +362,7 @@ a {
     padding-bottom: 1.5rem;
     background-color: white;
     opacity: 0.7;
+    padding-right: 10px;
     
   }
   .frontpage-banner{
@@ -386,7 +390,12 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 1120px;
-    
+    .shop-title {
+      text-align: center;
+      padding-top: 30px;
+      font-size: 43px;
+      font-weight: $base_line-height;
+    }
     .post-list {
       grid-row: span 2;
       display: grid;
@@ -399,6 +408,14 @@ a {
         display: none;
        }
       }
+      img{
+       border-bottom: 5px solid $color__background-hr;
+      }
+    }
+    .journal-list {
+      text-align: center;
+      padding-bottom: 30px;
+      height: 20px;
     }
     .products-taxonomies-front {
       grid-row: span 2;
@@ -407,6 +424,15 @@ a {
       grid-gap: 10px;
       margin-bottom: 4.5rem;
       padding-top: 4rem;
+
+
+      button{
+        background-color: $green_background;
+        box-shadow:none;
+        text-shadow:none;
+        color: $color__background-body;
+        text-transform: uppercase;
+      }
       a{
       display: flex;
       flex-direction: column;
@@ -415,23 +441,52 @@ a {
       border-top-width: 5px;
       padding: .75rem;
       width: 300px;
+
+      &:hover{
+        border: 1px solid $orange_brand;
+        border-top: 5px solid $orange_brand;
+      }
+      
       .front-page-taxonomies-icons{
         height: 70px;
         width: 70px;
         
       }
     }
-        p {
-          margin-bottom: 1.5rem;
+     p {
+      margin-bottom: 1.5rem;
+     }
+    }
+    .entry-header {
+      padding-bottom: 10px;
+
+    }
+    .entry-title {
+      text-transform: uppercase;
+    }
+    
+    .posted-on{
+      padding-left: 15px;
+    }
+
+  
+    h2{
+      padding-left: 15px;
+
+    }
+    .link-button{
+      padding-bottom: 20px;
+      padding: .6rem 1rem .4rem;
+      border: 0.6px solid $light_grey_brand;
+      color: #000;
+      margin-left: 15px;
+      &:hover{
+       border: 1px solid $green_background;
+       background-color: $green_background;
+       color: $color__background-body;
       }
     }
   }
-      .link-button{
-        bottom: .75rem;
-        left: .75rem;
-        border: 1px solid #000;
-        color: #000;
-      }
 }
 
 /*Single Product Page*/

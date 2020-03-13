@@ -25,12 +25,10 @@
 				<div class="container">
 
 			    <div class="site-branding">
-
-				    <div class="logo" style="<?php echo "background-image: url(" . get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg)'; ?>">
-					      <h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					      <p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				    </div>
-				  
+						
+						<a href= <?php echo esc_url( home_url( '/' ) ); ?>><div  class="logo"  style="<?php echo "background-image: url(" . get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg)'; ?>">
+						</div></a>
+						
 				  </div><!-- .site-branding -->
 				
 

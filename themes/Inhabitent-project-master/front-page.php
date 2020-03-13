@@ -21,13 +21,15 @@ get_header(); ?>
 	    <div class="main-content" >
 				
 				<div class="shop-list">
+					
 				 <?php 
 					 $taxonomies = get_terms( 'product_taxonomy', array(
 							 'hide_empty' => true,
 					) ); ?>
+						<h4 class="shop-title"> SHOP STUFF </h4>
 					 <?php if ( $taxonomies ) : ?>
 							<div class="products-taxonomies-front">
-	 
+								
 							 <?php foreach ( $taxonomies  as $taxonomy ) : ?>
 									 <a href="<?php echo get_term_link($taxonomy); ?>">
 									 <img class='front-page-taxonomies-icons' src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $taxonomy->slug . '.svg'?>" alt="<?php echo $taxonomy->slug ?>"> 
@@ -41,18 +43,23 @@ get_header(); ?>
 									<?php endif;?>
 	 
 				</div><!-- shop-list -->
+				
+				 
 				<div class="post-list" >
 					
-					
+				<!-- <h4 class="journal-list"> INHABITENT JOURNAL </h4> -->
+
 					<?php
+					
 	             $args = array( 'posts_per_page' => 3,
 							 
 							 'post_type' => 'post' );
 							 
 							 $journal_posts = get_posts( $args ); // returns an array of posts
-							 ?>
+							 ?> 
+							 
 							 <?php echo get_the_title('SHOP');?>
-     
+							 
      
      
 		 <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
@@ -73,5 +80,4 @@ get_header(); ?>
 	  </main><!-- #main -->
   </div><!-- #primary -->
 
-<a class="link-button" href="<?php the_permalink (); ?>">READ MORE</a>
 <?php get_footer(); ?>

@@ -710,26 +710,39 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
 a {
   color: black; }
 
 /* About page */
+.page-about p {
+  font-size: 1.1rem;
+  font-weight: 1.5; }
+
 .page-about .site-header {
   position: fixed;
   padding-top: 2rem;
-  padding-bottom: 1.5rem; }
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+  background-color: white;
+  opacity: 0.7; }
 
 .page-about .entry-title {
   position: relative;
-  bottom: 460px;
+  bottom: 600px;
+  left: 45%;
+  font-size: 3rem;
   color: white; }
 
-.page-about .site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center; }
+.page-about .entry-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  line-height: 1.75;
+  padding-bottom: 20px; }
+
+.page-about h2 {
+  text-align: center;
+  font-size: 2rem; }
 
 .page-about .about-hero-img {
   background: rgba(0, 0, 0, 0.3); }
@@ -1048,13 +1061,15 @@ a {
 .home {
   width: 100%; }
   .home a {
+    text-decoration: none;
     color: #21759b; }
   .home .site-header {
     position: fixed;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     background-color: white;
-    opacity: 0.7; }
+    opacity: 0.7;
+    padding-right: 10px; }
   .home .frontpage-banner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1084,6 +1099,11 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 1120px; }
+    .home .main-content .shop-title {
+      text-align: center;
+      padding-top: 30px;
+      font-size: 43px;
+      font-weight: 1.75; }
     .home .main-content .post-list {
       grid-row: span 2;
       display: grid;
@@ -1094,6 +1114,12 @@ a {
         border: 1px solid #e1e1e1; }
         .home .main-content .post-list article .entry-content {
           display: none; }
+      .home .main-content .post-list img {
+        border-bottom: 5px solid #ccc; }
+    .home .main-content .journal-list {
+      text-align: center;
+      padding-bottom: 30px;
+      height: 20px; }
     .home .main-content .products-taxonomies-front {
       grid-row: span 2;
       display: grid;
@@ -1101,6 +1127,13 @@ a {
       grid-gap: 10px;
       margin-bottom: 4.5rem;
       padding-top: 4rem; }
+      .home .main-content .products-taxonomies-front button {
+        background-color: #248A83;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        text-shadow: none;
+        color: #fff;
+        text-transform: uppercase; }
       .home .main-content .products-taxonomies-front a {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1116,16 +1149,32 @@ a {
         border-top-width: 5px;
         padding: .75rem;
         width: 300px; }
+        .home .main-content .products-taxonomies-front a:hover {
+          border: 1px solid #d99054;
+          border-top: 5px solid #d99054; }
         .home .main-content .products-taxonomies-front a .front-page-taxonomies-icons {
           height: 70px;
           width: 70px; }
       .home .main-content .products-taxonomies-front p {
         margin-bottom: 1.5rem; }
-  .home .link-button {
-    bottom: .75rem;
-    left: .75rem;
-    border: 1px solid #000;
-    color: #000; }
+    .home .main-content .entry-header {
+      padding-bottom: 10px; }
+    .home .main-content .entry-title {
+      text-transform: uppercase; }
+    .home .main-content .posted-on {
+      padding-left: 15px; }
+    .home .main-content h2 {
+      padding-left: 15px; }
+    .home .main-content .link-button {
+      padding-bottom: 20px;
+      padding: .6rem 1rem .4rem;
+      border: 0.6px solid #a1a1a1;
+      color: #000;
+      margin-left: 15px; }
+      .home .main-content .link-button:hover {
+        border: 1px solid #248A83;
+        background-color: #248A83;
+        color: #fff; }
 
 /*Single Product Page*/
 .single-product_type .site-header {
