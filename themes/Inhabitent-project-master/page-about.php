@@ -10,6 +10,7 @@ get_header();?>
 	<div id="primary" class="content-area">
 		<div class="about-hero">
 			<div class="about-hero-img"><?php the_post_thumbnail(); ?></div>
+			<?php the_title( '<h1 class="about-title">', '</h1>' ); ?>
 		</div>
 		<main id="main" class="site-main" role="main">
 			

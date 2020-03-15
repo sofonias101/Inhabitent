@@ -47,7 +47,6 @@ get_header(); ?>
 				 
 				<div class="post-list" >
 					
-				<!-- <h4 class="journal-list"> INHABITENT JOURNAL </h4> -->
 
 					<?php
 					

@@ -26,12 +26,21 @@
     width: 50px;
     color: $color__background-body;
 }
-.main-navigation li {
+.main-navigation {
+    display: flex;
     padding-left: 1.5rem;
     position: relative;
     justify-content: flex-end;
+    .nav-div {
+      display: flex;
+      justify-content: space-between;
+    }
+    .menu-item {
+      margin-right: 10px;
+    }
     a {
       padding-top: 1rem;
       // color: white;
     }
 }
+

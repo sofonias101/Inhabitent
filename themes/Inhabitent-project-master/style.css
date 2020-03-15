@@ -720,17 +720,21 @@ a {
 
 .page-about .site-header {
   position: fixed;
-  padding-top: 2rem;
+  padding-top: 30px;
   padding-bottom: 1.5rem;
-  padding-right: 1rem;
   background-color: white;
-  opacity: 0.7; }
+  opacity: 0.7;
+  padding-right: 10px; }
 
-.page-about .entry-title {
-  position: relative;
-  bottom: 600px;
-  left: 45%;
-  font-size: 3rem;
+.page-about .about-hero {
+  position: relative; }
+
+.page-about .about-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: white; }
 
 .page-about .entry-content {
@@ -766,7 +770,7 @@ a {
           align-items: center;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  padding-top: 30px;
   height: 3em;
   opacity: 0.9;
   background-color: #fff;
@@ -826,7 +830,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  top: 0;
+  padding-top: 30px;
   height: 3em;
   opacity: 0.9;
   background-color: #fff;
@@ -893,7 +897,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  top: 0;
+  padding-top: 30px;
   height: 3em;
   opacity: 0.9;
   background-color: #fff;
@@ -995,7 +999,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  top: 0;
+  padding-top: 30px;
   height: 3em;
   opacity: 0.9;
   background-color: #fff;
@@ -1065,7 +1069,7 @@ a {
     color: #21759b; }
   .home .site-header {
     position: fixed;
-    padding-top: 2rem;
+    padding-top: 30px;
     padding-bottom: 1.5rem;
     background-color: white;
     opacity: 0.7;
@@ -1147,8 +1151,7 @@ a {
                 align-items: center;
         border: 1px solid #e1e1e1;
         border-top-width: 5px;
-        padding: .75rem;
-        width: 300px; }
+        padding: .75rem; }
         .home .main-content .products-taxonomies-front a:hover {
           border: 1px solid #d99054;
           border-top: 5px solid #d99054; }
@@ -1179,7 +1182,7 @@ a {
 /*Single Product Page*/
 .single-product_type .site-header {
   position: fixed;
-  padding-top: 2rem;
+  padding-top: 30px;
   padding-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -1216,7 +1219,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  top: 0;
+  padding-top: 30px;
   height: 3em;
   opacity: 0.7;
   background-color: #fff;
@@ -1306,7 +1309,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  top: 0;
+  padding-top: 30px;
   height: 3em;
   opacity: 0.9;
   background-color: #fff;
@@ -1360,6 +1363,54 @@ a {
   margin-right: 6rem;
   border-left: 1px solid #e1e1e1; }
 
+/*Search page*/
+.search-results .big-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.search-results a {
+  text-decoration: none;
+  color: #248A83; }
+
+.search-results .site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  padding-top: 30px;
+  height: 3em;
+  opacity: 0.9;
+  background-color: #fff;
+  padding: 2rem;
+  padding-left: 10rem;
+  padding-right: 11rem;
+  padding-top: 2.5rem; }
+
+.search-results .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 10rem; }
+
+.search-results .content-area {
+  width: 70%;
+  padding-right: 4rem; }
+
+.search-results .widget-area {
+  width: 30%;
+  padding-top: 6rem;
+  padding-left: 4rem;
+  border-left: 1px solid #e1e1e1; }
+
 .site-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1396,13 +1447,25 @@ a {
   width: 50px;
   color: #fff; }
 
-.main-navigation li {
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-left: 1.5rem;
   position: relative;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-  .main-navigation li a {
+  .main-navigation .nav-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .main-navigation .menu-item {
+    margin-right: 10px; }
+  .main-navigation a {
     padding-top: 1rem; }
 
 .site-footer .footer-banner {
