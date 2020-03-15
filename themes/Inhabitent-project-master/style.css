@@ -1380,36 +1380,84 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   padding-top: 30px;
   height: 3em;
   opacity: 0.9;
   background-color: #fff;
   padding: 2rem;
-  padding-left: 10rem;
-  padding-right: 11rem;
-  padding-top: 2.5rem; }
+  padding-left: 250px;
+  padding-right: 11rem; }
 
-.search-results .site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-left: 10rem; }
+.search-results .site-main {
+  padding-left: 250px;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.search-results .page-header {
+  padding-bottom: 20px;
+  border-bottom: solid 1px #ccc;
+  font-size: 1.6rem; }
+
+.search-results .status-publish {
+  padding-top: 20px;
+  padding-bottom: 5px; }
+
+.search-results .entry-title {
+  font-size: 3rem; }
+
+.search-results .entry-summary p {
+  font-size: 1.3rem; }
 
 .search-results .content-area {
   width: 70%;
   padding-right: 4rem; }
 
+.search-results .search-pagination {
+  border-top: solid 1px #ccc;
+  padding-top: 40px; }
+
+.search-results .readmore {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding: .8rem 1.5rem .9rem;
+  border: 0.6px solid #a1a1a1;
+  color: #000;
+  margin-left: 15px; }
+  .search-results .readmore:hover {
+    border: 1px solid #248A83;
+    background-color: #248A83;
+    color: #fff; }
+
 .search-results .widget-area {
   width: 30%;
   padding-top: 6rem;
   padding-left: 4rem;
-  border-left: 1px solid #e1e1e1; }
+  border-left: 1px solid #ccc; }
+
+.search-results .search-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .search-results .search-pagination .page-numbers {
+    background-color: #248A83;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: .55rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: 1px solid #e1e1e1;
+    margin-right: 3px; }
+    .search-results .search-pagination .page-numbers:hover {
+      background-color: #2f1339; }
 
 .site-header {
   display: -webkit-box;
