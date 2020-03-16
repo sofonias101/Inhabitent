@@ -1315,8 +1315,7 @@ a {
   background-color: #fff;
   padding: 2rem;
   padding-left: 10rem;
-  padding-right: 11rem;
-  padding-top: 4rem; }
+  padding-right: 11rem; }
 
 .archive .entry-header {
   display: -webkit-box;
@@ -1349,12 +1348,16 @@ a {
           flex-direction: row;
   padding-left: 10rem; }
 
+.archive .products-taxonomies-list {
+  list-style-type: none; }
+  .archive .products-taxonomies-list a {
+    font-size: 22px;
+    color: #248A83; }
+
 .archive .content-area {
-  width: 70%;
-  padding-right: 4rem;
-  padding-left: 10rem;
-  padding-top: 5.5rem;
-  padding-bottom: 3.5rem; }
+  width: 100%;
+  padding-bottom: 40px;
+  padding-top: 40px; }
 
 .archive .widget-area {
   width: 30%;
@@ -1459,6 +1462,7 @@ a {
     .search-results .search-pagination .page-numbers:hover {
       background-color: #2f1339; }
 
+/*Header*/
 .site-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1514,7 +1518,27 @@ a {
   .main-navigation .menu-item {
     margin-right: 10px; }
   .main-navigation a {
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    color: #248A83; }
+    .main-navigation a:hover {
+      color: #2f1339; }
+    .main-navigation a:visited {
+      color: #248A83; }
+
+fieldset {
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-before: 0;
+          padding-block-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  padding-inline-end: 0;
+  -webkit-padding-after: 0;
+          padding-block-end: 0; }
 
 .site-footer .footer-banner {
   height: 100%; }

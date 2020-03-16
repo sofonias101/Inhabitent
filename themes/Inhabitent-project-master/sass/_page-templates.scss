@@ -610,9 +610,7 @@ a {
     background-color: $color__background-body;  
     padding: 2rem;
     padding-left: 10rem;
-    padding-right: 11rem;
-    padding-top: 4rem;
-    
+    padding-right: 11rem;    
   }
   .entry-header {
     display: flex;
@@ -641,12 +639,17 @@ a {
     flex-direction: row;
     padding-left: 10rem;
   }
+  .products-taxonomies-list{
+    list-style-type: none;
+    a {
+      font-size: 22px;
+      color: $green_background;
+    }    
+  }
   .content-area {
-    width:70%;
-    padding-right: 4rem;
-    padding-left: 10rem;
-    padding-top: 5.5rem;
-    padding-bottom: 3.5rem;
+    width:100%;
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
   .widget-area {
     width:30%;
